@@ -57,6 +57,14 @@
         product_size:0
       }
     },
+    created(){
+      this.testing()
+    },
+    methods:{
+      testing() {
+        console.log(this.baseURL);
+      }
+    },
     mounted(){
       this.category_size = this.categories.length;
       this.category_size = Math.min(6, this.category_size);
